@@ -52,6 +52,16 @@ This section describes the purpose and behavior of each function and modifier in
   - Iterates through all previous funders and resets their contributed amount to zero.
   - Resets the `funders` array to an empty state.
   - Sends the entire contract balance to the owner's address using `.call{value: ...}`.
+ 
+---
+
+#### `receive()`
+- **Description:** Handle tx that send some value to the contract without calling any function.
+
+---
+
+#### `fallback()`
+- **Description:** Handle tx that send some value to the contract using some calldata that doesn't exists on this contract.
 
 ---
 
